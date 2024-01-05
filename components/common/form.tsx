@@ -51,7 +51,7 @@ const Form = () => {
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="flex flex-col mb-4">
-            <label htmlFor="name" className="mb-1 font-bold italic">
+            <label htmlFor="name" className="mb-1 font-bold">
               F.I.O
             </label>
             <input
@@ -64,7 +64,7 @@ const Form = () => {
             )}
           </div>
           <div className="flex flex-col mb-4">
-            <label className="mb-1 font-bold italic">Telefon raqam</label>
+            <label className="mb-1 font-bold">Telefon raqam</label>
             <Controller
               control={control}
               {...register("phone", { required: true })}
