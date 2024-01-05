@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+    background-image: url("/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#google_translate_element {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+#google_translate_element span {
+    display: none !important;
+}
+
+#google_translate_element div {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+#google_translate_element select {
+    cursor: pointer;
+    color: #fff;
+    border-color: #189018;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #189018;
+    border-radius: 20px;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    text-align: center;
+    outline: none;
+}
+
+.form-control {
+    width: 100% !important;
+    border-radius: 0.5rem !important;
+    height: 61px !important;
+    font-size: 16px !important;
+}
+
+.react-tel-input .flag-dropdown {
+    border-radius:  0.5rem 0 0 0.5rem !important;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.slick-list {
+    margin: 0 -7px !important;
+}
+
+.slick-slide > div {
+    padding: 0 10px !important;
+}
+
+.slick-track {
+    padding: 100px 0 50px !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #4ade80 !important;
+    font-size: 35px !important;
+}
+
+.slick-prev {
+    left: 0 !important;
+    z-index: 10 !important;
+    }
+
+.slick-next {
+    right: 17px !important;
+    z-index: 10 !important;
+}
+
+.slick-dots li button:before {
+    font-size: 14px !important;
+}
+
+.slick-dots li.slickactive button:before {
+    color: #333 !important;
+}
+
+.slick-dots li button:before {
+    color: green !important;
+}
