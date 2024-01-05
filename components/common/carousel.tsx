@@ -4,12 +4,12 @@ import Slider from "react-slick";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 
-const Carousel = (props) => {
+const Carousel = (props: any) => {
   const { items } = props;
   let [isOpen, setIsOpen] = useState(false);
-  let [activeItem, setActiveItem] = useState(null);
+  let [activeItem, setActiveItem] = useState<any>(null);
 
-  const openModal = (item) => {
+  const openModal = (item: any) => {
     setIsOpen(true);
     setActiveItem(item);
   };
@@ -60,7 +60,7 @@ const Carousel = (props) => {
         Bizning xizmatlar
       </h2>
       <Slider {...settings}>
-        {items.map((item, i) => (
+        {items.map((item: any, i: number) => (
           <div key={i} className="p-10 text-center rounded-lg shadow-lg h-full">
             <img className="w-[70px] mx-auto mb-10" src={item.image} alt="" />
             <h2 className="lg:text-[17px] text-[14px] uppercase font-bold mb-2">
@@ -69,7 +69,7 @@ const Carousel = (props) => {
             <button
               onClick={() => openModal(item)}
               className="font-bold rounded-full border border-blue-600 bg-black-500 px-10 py-2 hover:bg-blue-700 hover:text-white"
-              tipe="button"
+              type="button"
             >
               Batafsil
             </button>

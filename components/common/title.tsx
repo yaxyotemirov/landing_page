@@ -1,6 +1,6 @@
 "use client";
 
-const Title = (props) => {
+const Title = (props: any) => {
   const { tag, text, className } = props;
 
   if (tag === "h1") return <h1 className={className}>{text}</h1>;

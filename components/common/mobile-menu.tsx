@@ -14,10 +14,10 @@ const MobileMenu = () => {
     { href: "/", name: "Desktop ilova yaratish" },
   ];
 
-  const menuList = (items) => {
+  const menuList = (items: any) => {
     return (
       <div>
-        {items.map((item, i) => (
+        {items.map((item: any, i: number) => (
           <Menu.Item>
             {({ active }) => (
               <Link
